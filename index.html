@@ -47,7 +47,7 @@
         <!-- Головна частина -->
         <section class="main">
             <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="main-button" type="button">Замовити послугу</button>
+            <button class="main-button" type="button" data-modal-open>Замовити послугу</button>
         </section>
 
         <!-- Параметри -->
@@ -107,17 +107,29 @@
         <!-- Чим ми займаємося -->
         <section class="work">
             <div class="container">
-                <h2 class="activities-title">Чим ми займаємося</h2>
+                <h2 class="work-title">Чим ми займаємося</h2>
 
                 <ul class="work-list">
                     <li class="work-item">
-                        <img src="images/box_1.jpg" alt="Планшет з клавіатурою" width="370" height="294" />
+                        <div class="work-image-text">
+                            <img class="work-image" src="images/box_1.jpg" alt="Планшет з клавіатурою" width="370"
+                                height="294" />
+                            <p class="work-text">Десктопні додатки</p>
+                        </div>
                     </li>
                     <li class="work-item">
-                        <img src="images/box_2.jpg" alt="Телефон з ноутбуком" width="370" height="294" />
+                        <div class="work-image-text">
+                            <img class="work-image" src="images/box_2.jpg" alt="Телефон з ноутбуком" width="370"
+                                height="294" />
+                            <p class="work-text">Мобільні додатки</p>
+                        </div>
                     </li>
                     <li class="work-item">
-                        <img src="images/box_3.jpg" alt="Планшет з кольорами" width="370" height="294" />
+                        <div class="work-image-text">
+                            <img class="work-image" src="images/box_3.jpg" alt="Планшет з кольорами" width="370"
+                                height="294" />
+                            <p class="work-text">Дизайнерські рішення</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -324,6 +336,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close> <svg class="modal-close-icon" width="20"
+                    height="20">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                </svg> </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
